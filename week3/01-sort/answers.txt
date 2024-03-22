@@ -1,0 +1,8 @@
+sort1 uses: Bubble Sort
+How do you know?: Its best time complexity is O(n) and O(n^2) being the worst. It was shown when the sorted txt had an exponentially faster sorting time than the unsorted.
+
+sort2 uses: Merge Sort
+How do you know?: It has the fastest time in sorting as well as having the same best and worst time complexity.
+
+sort3 uses: Selection Sort
+How do you know?: The best and worst time complexity are both at O(n^2), which was shown in the tests.
