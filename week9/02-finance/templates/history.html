@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %} History {% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th>Transacted</th>
+                <th>Transaction</th>
+                <th>Symbol</th>
+                <th id="num">Shares</th>
+                <th id="num">Price</th>
+                <th id="num">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+            <tr id="transaction">
+                <td>{{ transaction.transacted }}</td>
+                <td>{{ transaction.type | upper }}</td>
+                <td>{{ transaction.symbol }}</td>
+                <td id="num">{{ transaction.shares }}</td>
+                <td id="num">{{ transaction.price | usd }}</td>
+                <td id="num">{{ (transaction.shares * transaction.price) | usd }}</td>
+            </tr>
+            {% endfor %}
+            <tr id="total">
+                <td colspan="4"></td>
+                <td id="num">TOTAL</td>
+                <td id="num" border-top="1px">{{ (total) | usd }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

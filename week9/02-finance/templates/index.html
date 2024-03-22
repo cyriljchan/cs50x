@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %} Portfolio {% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th id="num">Shares</th>
+                <th id="num">Price</th>
+                <th id="num">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+            <tr id="transaction">
+                <td>{{ transaction.symbol }}</td>
+                <td id="num">{{ transaction.shares }}</td>
+                <td id="num">{{ prices[loop.index0] | usd }}</td>
+                <td id="num">{{ (transaction.shares * prices[loop.index0]) | usd }}</td>
+            </tr>
+            {% endfor %}
+            <tr id="stock">
+                <td></td>
+                <td></td>
+                <td id="num">Stock Total</td>
+                <td id="num">{{ total | usd }}</td>
+            </tr>
+            <tr id="cash">
+                <td></td>
+                <td></td>
+                <td id="num">Cash</td>
+                <td id="num">{{ cash | usd }}</td>
+            </tr>
+            <tr id="total">
+                <td></td>
+                <td></td>
+                <td id="num">Sum Total</td>
+                <td id="num">{{ (total + cash) | usd }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
