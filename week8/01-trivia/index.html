@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            // TODO: Add code to check answers to questions
+
+                // Select the "correct" button and add a click listener
+                let rightbutton = document.querySelector('button#right');
+                rightbutton.addEventListener('click', function() {
+                    // Change button bgcolor to green and modify the status
+                    rightbutton.style.backgroundColor = 'green';
+                    rightbutton.parentElement.querySelector("p#status").innerHTML = "Correct!";
+                });
+
+                // Select the "wrong" buttons and add click listeners forEach button
+                let wrongbuttons = document.querySelectorAll('button#wrong');
+                wrongbuttons.forEach(wrongbutton => {
+                    wrongbutton.addEventListener('click', function() {
+                        // Change button bgcolor to red and modify the status
+                        wrongbutton.style.backgroundColor = 'red';
+                        wrongbutton.parentElement.querySelector("p#status").innerHTML = "Wrong";
+                    });
+                });
+
+                // Add click listener to the submit button
+                document.querySelector('button#submit').addEventListener('click', function() {
+                    // Select the textbox
+                    let input = document.querySelector('input#textbox');
+                    // Check textbox value for the correct answer and modify accordingly
+                    if (input.value == "answer") {
+                        input.style.backgroundColor = 'green';
+                        input.parentElement.querySelector("p#status").innerHTML = "Correct!";
+                    }
+                    else {
+                        input.style.backgroundColor = 'red';
+                        input.parentElement.querySelector("p#status").innerHTML = "Wrong";
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which is the third button?</h3>
+                <!-- id:status waits for js modification -->
+                <p id='status'></p>
+                <button id="wrong">Answer 1</button>
+                <button id="wrong">Answer 2</button>
+                <button id="right">Answer 3</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>How do you spell 'answer'?</h3>
+                <!-- id:status waits for js modification -->
+                <p id='status'></p>
+                <input id="textbox">
+                <button id="submit">Check Answer</button>
+            </div>
+        </div>
+    </body>
+</html>

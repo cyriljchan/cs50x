@@ -1,0 +1,34 @@
+PAGES:
+1. index.html
+2. contact.html
+3. meme.html
+4. water.html
+
+TAGS
+1. div
+2. nav
+3. ul
+4. li
+5. hr
+6. a
+7. input
+8. button
+9. form
+10. h1
+
+Bootstrap
+1. Navigation Bar
+
+CSS Selectors
+1. html, body
+2. .content
+3. .text
+4. #home
+5. #water
+
+CSS Properties
+1. font-family
+2. height
+3. width
+4. display
+5. justify-content
