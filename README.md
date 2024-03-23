@@ -43,11 +43,39 @@ My solutions to the Harvard University's CS50x Introduction to Computer Science 
 **04-recover** - Implement a program that recovers JPEGs from a forensic image.
 
 ## Week 5 | **Data Structures**
+**01-inheritance** - Implement a program that simulates the inheritance of blood types for each member of a family.
+
+**02-speller** - Implement a program that spell-checks a file using a hash table.
 
 ## Week 6 | **Python**
+**01-sentimental-hello** - Implement a program in Python that prompts the user for their name and then says hello to that user.
+
+**02-sentimental-mario-less** - Implement a program in Python that recreates that pyramid, using hashes (#) for bricks.
+
+**03-sentimental-mario-more** - Implement a program in Python that recreates that pyramid, using hashes (#) for bricks.
+
+**04-sentimental-cash** - Implement a program in Python that prints the minimum coins needed to make the given amount of change.
+
+**05-sentimental-credit** - Implement a program in Python that checks the validity of a given credit card number.
+
+**06-sentimental-readability** -  Implement a program in Python that calculates the approximate grade level needed to comprehend some text.
+
+**07-dna** - Implement a program that identifies to whom a sequence of DNA belongs.
 
 ## Week 7 | **SQL**
+**01-songs** - Write SQL queries to answer questions about a database of the 100 most-streamed songs on Spotify in 2018.
+
+**02-movies** - Write SQL queries to answer questions about this database of movies.
+
+**03-fiftyville** - The CS50 Duck has been stolen! The town of Fiftyville has called upon you to solve the mystery of the stolen duck. 
 
 ## Week 8 | **HTML, CSS, JavaScript**
+**01-trivia** - Write a webpage that lets users answer trivia questions.
+
+**02-homepage** - Create a simple homepage that introduces yourself, your favorite hobby or extracurricular, or anything else of interest to you.
+
 
 ## Week 9 | **Flask**
+**01-birthdays** - Create a web application to keep track of friends’ birthdays.
+
+**02-finance** - Implement a website via which users can “buy” and “sell” stocks.
