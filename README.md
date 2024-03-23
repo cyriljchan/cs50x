@@ -25,8 +25,22 @@ My solutions to the Harvard University's CS50x Introduction to Computer Science 
 **04-substitution** - Implement a program that enables you to encrypt messages using a substitution cipher.
 
 ## Week 3 | **Algorithms**
+**01-sort** - Record your answers, along with an explanation for each program, by filling in the blanks marked TODO.
+
+**02-plurality** - Implement a program that runs a plurality election.
+
+**03-runoff** - Implement a program to simulate a runoff election.
+
+**04-tideman** - Implement a program to simulate an election by the Tideman voting method.
 
 ## Week 4 | **Memory**
+**01-volume** - Implement a program to modify the volume of an audio file.
+
+**02-filter-less** - Implement a program to apply filters to BMPs.
+
+**03-filter-more** - Implement a program to apply filters to BMPs.
+
+**04-recover** - Implement a program that recovers JPEGs from a forensic image.
 
 ## Week 5 | **Data Structures**
 
